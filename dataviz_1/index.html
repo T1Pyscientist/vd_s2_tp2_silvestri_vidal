@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,16 +16,21 @@
             margin: 0;
             padding: 0;
         }
-
+        
         .container {
             display: grid;
             align-items: center;
             justify-content: center;
             padding: 5%;
         }
-
+        
         h2 {
             text-align: center;
+        }
+        
+        svg g text {
+            color: white;
+            fill: white;
         }
     </style>
 
@@ -33,13 +39,14 @@
 
 <body>
     <div class="container">
-        <h2>Cantidad de astronautas por profesion</h2>
-        <div id='chart' class="chart"></div>    
+        <h2>Cantidad de astronautas por profesión</h2>
+        <div id='chart' class="chart"></div>
     </div>
 </body>
 
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+<script src="script.js"></script>
+
 </html>

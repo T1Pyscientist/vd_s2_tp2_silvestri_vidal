@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +15,14 @@
             margin: 0;
             padding: 0;
         }
-
+        
         .container {
             display: grid;
             align-items: center;
             justify-content: center;
             padding: 5%;
         }
-
+        
         h2 {
             text-align: center;
         }
@@ -33,11 +34,15 @@
 <body>
     <div class="container">
         <h2>Profesiones en el tiempo</h2>
-        <div id='chart' class="chart"></div>    
+        <div style="font-size: 14px; text-align: center;">
+            <p>Representación del total de horas en misión por profesión a lo largo de los años
+        </div>
+        <div id='chart' class="chart"></div>
     </div>
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+<script src="script.js"></script>
+
 </html>
