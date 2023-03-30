@@ -1,5 +1,6 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
     // - Horas en mision vs horas en eva 
+    data = data.filter(d => d.anio_mision != 20)
     let chart4 = Plot.plot({
         marks: [
             Plot.lineY(data.filter(d => d.ocupacion != 'participante de vuelo espacial'),
@@ -8,6 +9,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         ],
         width: 1000,
         y: { grid: true, domain: [0, 60000] },
+        x: { domain: [2010, 2020] },
 
         color: {
             scheme: 'blues',

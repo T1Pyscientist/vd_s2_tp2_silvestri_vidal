@@ -24,10 +24,11 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
 
         width: 900,
         height: 400,
-        marginLeft: 120,
+        marginLeft: 110,
         marginBottom: 50,
         insetLeft: 30,
-        insetRight: 30
+        insetRight: 30,
+        // caption: "Fuente: NASA (Estados Unidos), Roscosmos (Rusia) y otros sitios.",
     })
 
     d3.select('#chart').append(() => chart2)
