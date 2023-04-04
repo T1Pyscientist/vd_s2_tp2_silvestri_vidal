@@ -1,10 +1,6 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
     // - Horas en mision por año
     data = data.filter(d => d.anio_mision != 20)
-    data.forEach(element => {
-        element.anio_mision = new Date(element.anio_mision, 0, 1)
-    });
-    console.log(data)
 
     let chart4 = Plot.plot({
         marks: [
@@ -30,7 +26,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             labelOffset: 60,
             nice: true,
             labelAnchor: "center",
-            tickFormat: "%Y",
+            domain: [2010, 2019],
             type: 'time',
 
         },
