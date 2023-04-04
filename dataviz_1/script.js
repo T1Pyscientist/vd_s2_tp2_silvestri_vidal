@@ -31,7 +31,10 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         style: {
             backgroundColor: "1f1f1f",
             color: '#6BAED6'
-        }
+        },
+
+        marginTop: 35,
+        marginBottom: 50,
 
     })
 
