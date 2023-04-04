@@ -19,7 +19,7 @@
         
         .container {
             display: grid;
-            align-items: center;
+            align-items: left;
             justify-content: center;
             padding: 5%;
         }
@@ -27,23 +27,29 @@
         h2 {
             text-align: left;
             font-size: 35px;
+            margin-top: 0;
+            margin-bottom: 0;
         }
         
         svg g text {
             color: white;
             fill: white;
         }
+
     </style>
 </head>
 
+
 <body>
     <div class="container">
-        <h2>Cantidad de astronautas por profesión</h2>
+        <h2>Qué profesiones viajan</h2>
+        <div style="font-size: 14px; text-align: left;">
+            <p>Cantidad de astronautas que viajaron en la década del 2010 por profesión</p>
+        </div>
         <div id='chart' class="chart"></div>
-        <div style="font-size: 12px; text-align: left;">
-            <p>Fuente: NASA (Estados Unidos), Roscosmos (Rusia) y otros sitios.
-                <p style="margin:-1.5% 0;"></p>
-                <p>Autores: Juan Ignacio Silvestri & Dolores Vidal
+        <div style="font-size: 12px; text-align: left; color: #888888; line-height: 0.5;">
+            <p>Fuente: NASA (Estados Unidos), Roscosmos (Rusia) y otros sitios.</p>
+            <p>Autores: Juan Ignacio Silvestri & Dolores Vidal</p>
         </div>
     </div>
 </body>

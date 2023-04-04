@@ -10,25 +10,35 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                     x2: 'max',
                 }, { x: 'edad_mision', y: 'ocupacion' }, ),
             ),
-            Plot.axisY({ lineWidth: 1 }),
+            Plot.axisY({ lineWidth: 8}),
         ],
 
-        y: { label: "Profesión" },
-        x: { grid: true, domain: [30, 65] },
-
-        style: {
-            backgroundColor: "1f1f1f",
-            scheme: 'blues',
-            color: 'rgb(107, 174, 214)'
+        y: { label: null, bandwidth: 0.5},
+        x: {
+            grid: true, 
+            domain: [30, 65], 
+            label: "Años de edad", 
+            labelOffset: 70, 
+            labelAnchor: "center",
+            tickPadding: 20
         },
 
-        width: 900,
-        height: 400,
-        marginLeft: 110,
-        marginBottom: 50,
+        style: {
+            backgroundColor: "282828",
+            scheme: 'blues',
+            color: 'rgb(107, 174, 214)',
+            fontSize: 14,
+            fontFamily: 'Exo',
+        },
+
+        width: 1000,
+        height: 450,
+        marginLeft: 150,
+        marginRight: 50,
+        marginBottom: 90,
+        marginTop: 70,
         insetLeft: 30,
         insetRight: 30,
-        // caption: "Fuente: NASA (Estados Unidos), Roscosmos (Rusia) y otros sitios.",
     })
 
     d3.select('#chart').append(() => chart2)

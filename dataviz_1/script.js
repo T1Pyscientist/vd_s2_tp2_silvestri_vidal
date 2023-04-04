@@ -23,18 +23,20 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                         fontFamily: "Exo, sans-serif",
                     }),
             ),
+
+            Plot.axisX({label: null, lineWidth:8}),
+            Plot.axisY({label: null, color: "RBG(255,255,255,0.0)"})
         ],
 
-        x: { grid: false, line: true },
-        y: { grid: true, line: false, domain: [0, 85], label: "↑ Porcentaje (%)" },
-
         style: {
-            backgroundColor: "1f1f1f",
-            color: '#6BAED6'
+            backgroundColor: "282828",
+            color: "white",
+            fontFamily: "Exo, sans-serif",
+            fontSize: 14,
         },
 
-        marginTop: 35,
-        marginBottom: 50,
+        margin: 50,
+        width: 900
 
     })
 
