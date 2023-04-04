@@ -1,5 +1,4 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
-    // - Horas en mision según nacionalidad 
     let chart3 = Plot.plot({
         facet: {
             data: data,
@@ -23,9 +22,9 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         },
         width: 1400,
         height: 400,
-        marginBottom: 60, 
+        marginBottom: 70,
+        marginTop: 50,
     })
-
 
     d3.select('#chart').append(() => chart3)
 

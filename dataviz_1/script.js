@@ -4,9 +4,11 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     let chart = Plot.plot({
         marks: [
             Plot.barY(data,
-                Plot.groupX({ y: 'count' }, { x: 'ocupacion', sort: { x: 'y', reverse: true } })
-            )
-
+                Plot.groupX({ y: 'count' }, {
+                    x: 'ocupacion',
+                    sort: { x: 'y', reverse: true },
+                })
+            ),
         ],
 
         x: { grid: false, line: true },
@@ -17,7 +19,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             color: 'rgb(107, 174, 214)'
         },
 
-        marginTop: 35,
+        marginTop: 40,
         marginBottom: 50,
 
     })
